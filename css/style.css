@@ -121,6 +121,10 @@ header{
     margin: auto;
 }
 
+.favourite-button:hover > span{
+    color: red;
+}
+
 .product-description{
     text-transform: uppercase;
     font-weight: bold;
