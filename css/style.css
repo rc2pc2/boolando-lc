@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+header ul,
+footer ul{
+    list-style-type: none;
+    display: flex;
+}
+
+header ul > li,
+footer ul > li{
+    margin-right: .5rem;
+}
+
+header li > a,
+footer ul > li{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article.product{
+    width: calc(calc(100% / 3) - .5rem);
+    margin-right: .5rem;
+    margin-bottom: 3rem;
+}
+
+.justify-space-between{
+    justify-content: space-between;
+}
+
+header{
+    background-color: #fe6900;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.product-image{
+    margin-bottom: .5rem;
+    position: relative;
+}
+
+.product-image img.visible-image{
+    display: block;
+}
+
+.product-image img.hover-image{
+    display: none;
+}
+
+.product-image:hover img.visible-image{
+    display: none;
+}
+
+.product-image:hover img.hover-image{
+    display: block;
+}
+
+.favourite-button,
+.tags-container{
+    position: absolute;
+    display: flex;
+}
+
+.favourite-button{
+    justify-content: center;
+    align-items: center;
+    padding: .5rem .75rem;
+    background-color: white;
+    font-size: 2rem;
+    top:.75rem;
+    right: 0;
+}
+
+.tags-container{
+    font-weight: bold;
+    font-size: .8rem;
+    color: white;
+    bottom:2.5rem;
+    left: 0;
+}
+
+.tags-container > span{
+    margin-right: .33rem;
+}
+
+.tag{
+    padding: .25rem .75rem;
+    background-color: #fe6900;
+}
+
+.tag-discount{
+    background-color: red;
+}
+
+.tag-green{
+    background-color: green;
+}
+
+.favourite-button > span{
+    margin: auto;
+}
+
+.product-description{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.product-price,
+.product-header{
+    font-size: .8rem;
+}
+
+.actual-price{
+    font-weight: bold;
+    color: red; 
+}
+
+.original-price{
+    text-decoration: line-through;
+}
+
+section.row{
+    margin-bottom: 2rem;
+}
+
+footer{
+    background-color: #1a1a1a;
+    color: white;
+    font-size: .8rem;
+}
+
+header, 
+footer{
+    padding: 1rem 0;
+}
+
+.footer-header{
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+#main-logo{
+    height: 1.5rem;
+    vertical-align: middle;
+}
